@@ -1,21 +1,42 @@
 body {
-  background-color: papayawhip
-}
-
-h1 {
-  color: black; font: 'Times New Roman'; font-size: xx-large;
-}
-
-p {
-  color: aquamarine;
+  background-color: black;
 }
 
 .loginform {
-  padding :30px; 
-  background-color: black;
-  border: 2px solid cyan;
-  border-radius: 13px;
-  margin: 20px
+  background-color: rgb(36, 28, 28);
+  border-radius: 8px;
+  padding: 5px;
+  width: 300px;
+  margin: auto; /* center horizontally */
+  position: absolute;
+  top: 50%; /* center vertically */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%); /* adjust for centering */
+  /* box-shadow: 0 0 25px #d1d1d1;
+  box-sizing: border-box; padding in the element width */
 }
 
+.txtfld {
+  margin-left: 20px;
+  padding: 8px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+}
 
+#password{
+  margin-top: 5px;
+}
+
+.bttn {
+  color: #000;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 10px;
+  width: 50%;
+  padding-top: 5px;
+}  
+
+.logtext {
+  color:white;
+}

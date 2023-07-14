@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>LOG IN</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
 
-    <body>
-        <form class="loginform" method="post">
-            <input class="txtfld" type="text" id="username" placeholder="Username"><br>
-            <input class="txtfld" type="text" id="password" placeholder="password"><br>
-            <button class="bttn">Button</button>
-            <p> Do you have an account?</p> <a href="#">Sign up</a><br>
-            <p>Forgot Password?</p> <a href="#">Reset Password</a>
-        </form>
-    </body>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-form {
+      width: 300px;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .login-form h2 {
+      width: fit-content;
+      margin: 20px auto;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    .login-form input[type="submit"] {
+      width: 80%; /* Adjust the width based on content */
+      margin: 0 auto 30px; /* Center horizontally */
+      display: block; /* Ensure block-level element */
+      padding: 10px;
+      background-color: #f6c90e;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-form input[type="submit"]:hover {
+      background-color: #f9d64c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </div>
+</body>
 </html>
