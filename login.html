@@ -53,7 +53,7 @@
 
     .login-form input[type="submit"] {
       width: 80%; /* Adjust the width based on content */
-      margin: 0 auto 30px; /* Center horizontally */
+      margin: 0 auto 7px; /* Center horizontally */
       display: block; /* Ensure block-level element */
       padding: 10px;
       background-color: #f6c90e;
@@ -66,6 +66,15 @@
     .login-form input[type="submit"]:hover {
       background-color: #f9d64c;
     }
+
+    .login-form a {
+        text-decoration: none;
+        color: #d7b013;
+        width: fit-content;
+        margin: 0 auto 10px;
+        display: block;
+        font-size: small;
+    }
   </style>
 </head>
 <body>
@@ -76,6 +85,8 @@
         <input type="text" placeholder="Username" required>
         <input type="password" placeholder="Password" required>
         <input type="submit" value="Login">
+        <a href="#">Forgotten Password</a>
+        <a href="#" id="signup">Sign up instead</a>
       </form>
     </div>
   </div>
