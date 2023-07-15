@@ -1,24 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <title>Joomia Store</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No-Product Store</title>
+  <style>
+    body {
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
 
-    <body>
-        <header>
-            <p>Joomia Store <p>
-            <nav>
-                <ul style="text-align:center;">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>   
-        
-        
-    </body>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 4vw; /* Responsive font size using viewport units */
+      margin-left: 4vw;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      margin-right: 4vw;
+    }
+
+    nav a {
+      display: block;
+      margin-left: 2vw; /* Responsive margin using viewport units */
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .seller-card {
+      background-color: #1c1c1c;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .seller-card h2 {
+      margin-top: 0;
+      font-size: 3vw; /* Responsive font size using viewport units */
+    }
+
+    .sub-card {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh; /* Responsive gap using viewport units */
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      border-radius: 5px;
+      padding: 2vh; /* Responsive padding using viewport units */
+    }
+
+    .product-image {
+      width: 10vw; /* Responsive width using viewport units */
+      height: 10vw; /* Responsive height using viewport units */
+      background-color: #333;
+      border-radius: 5px;
+    }
+
+    .product-details {
+      margin-left: 2vw; /* Responsive margin using viewport units */
+    }
+
+    .product-name {
+      font-weight: bold;
+      font-size: 2.5vw; /* Responsive font size using viewport units */
+    }
+
+    .product-price {
+      color: #f6c90e;
+      font-size: 2vw; /* Responsive font size using viewport units */
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 2vw; /* Responsive font size using viewport units */
+    }
+
+    /* Media Query for smaller screens (max-width: 768px) */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        margin-left: 15px;
+      }
+
+      .product {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .product-image {
+        width: 40vw; /* Adjust image size for smaller screens */
+        height: 40vw;
+      }
+
+      .sub-card {
+        gap: 5vw; /* Adjust gap for smaller screens */
+      }
+
+      footer p {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">No-Product Store</div>
+    <nav class="sidebar">
+      <a href="#">Home</a>
+      <a href="#">Categories</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="seller-card">
+      <h2>Adidas</h2>
+      <div class="sub-card">
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Sports Wear Kit Type A</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Shorts Pack</div>
+            <div class="product-price">$24.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seller-card">
+      <h2>Denim Wears</h2>
+      <div class="sub-card">
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Trimmed Edge Jacket</div>
+            <div class="product-price">$14.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Top</div>
+            <div class="product-price">$29.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 No-Product Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    
+  </script>
+</body>
 </html>
