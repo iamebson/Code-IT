@@ -2,12 +2,12 @@ what kind of store
 JOOMIA
 
 homepage
-    header
-    store name
+    header....done
+    store name...done
     talk with other sellers
     gallery
-    nav bar
-    footer
+    nav bar...done
+    footer...done
 
 
 

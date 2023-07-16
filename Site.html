@@ -27,8 +27,8 @@
     }
 
     .logo {
-      font-size: 4vw; 
-      margin-left: 4vw;
+      font-size: x-large; 
+      margin-left: 3vw;
       font-weight: bold;
     }
 
@@ -48,21 +48,43 @@
       background-color: #1c1c1c;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 20px;
+      padding: 10px 20px 10px;
       margin-bottom: 20px;
     }
 
     .seller-card h2 {
       margin-top: 0;
-      font-size: 3vw; 
+      margin-bottom: 10px;
+      font-size: x-large; 
     }
 
     .sub-card {
       display: flex;
       flex-direction: row;
-      gap: 8px; 
-      overflow-x: auto;
+      gap: 8px;
+      overflow-x: scroll; /* Enable horizontal scrolling */
     }
+
+    /* Hide the scrollbar for all browsers */
+    .sub-card {
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+    }
+
+    /* Optional: Add styling for scrollbar track and thumb */
+    .sub-card::-webkit-scrollbar {
+      display: none; /* Hide scrollbar for webkit-based browsers */
+    }
+
+    .sub-card::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    .sub-card::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 0.25em;
+    }
+
 
     .product {
       display: flex;
@@ -83,12 +105,16 @@
     }
 
     .product-details {
-      margin-top: 5px; 
+      margin-top: 5px;
+      width: 100%; 
     }
 
     .product-name {
       font-weight: bold;
-      font-size: normal; 
+      font-size: normal;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     .product-price {
@@ -125,6 +151,12 @@
       .product-image {
         width: 100%; /* Adjust image size for smaller screens */
         height: 120px;
+      }
+
+      .product-name { 
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
       }
 
       .sub-card {
