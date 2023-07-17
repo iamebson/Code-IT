@@ -13,6 +13,11 @@
       color: #fff;
     }
 
+    .board {
+      padding: 0 3vw;
+      height: 500px;
+    }
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -42,14 +47,23 @@
       margin-left: 2vw; 
       text-decoration: none;
       color: #fff;
+      padding: 8px 0;
     }
+
+    /*.active-nav  {
+      border-radius: 9px;
+      background-color: #f6c90e;
+      color: #121212;
+      padding: 8px 15px;
+      
+    }*/
 
     .seller-card {
       background-color: #1c1c1c;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       padding: 10px 20px 10px;
-      margin-bottom: 20px;
+      margin-bottom: 8px;
     }
 
     .seller-card h2 {
@@ -65,13 +79,13 @@
       overflow-x: scroll; /* Enable horizontal scrolling */
     }
 
-    /* Hide the scrollbar for all browsers */
+    /* Hiding the scrollbar for all browsers */
     .sub-card {
       scrollbar-width: none; /* Firefox */
       -ms-overflow-style: none; /* IE and Edge */
     }
 
-    /* Optional: Add styling for scrollbar track and thumb */
+    /* Optional: Adding styling for scrollbar track and thumb, whatever that means */
     .sub-card::-webkit-scrollbar {
       display: none; /* Hide scrollbar for webkit-based browsers */
     }
@@ -85,12 +99,11 @@
       border-radius: 0.25em;
     }
 
-
     .product {
       display: flex;
       flex-direction: column;
       width:150px;
-      max-width: 150px;
+      min-width: 150px;
       background-color: #333;
       border-radius: 5px;
       padding: 5px; 
@@ -141,6 +154,18 @@
         margin-left: 15px;
       }
 
+      .sidebar {
+        display: none;
+      }
+
+      .board {
+        height: 300px;
+      }
+
+      .container {
+        padding: 8px;
+      }
+
       .product {
         flex-direction: column;
         align-items: flex-start;
@@ -173,12 +198,15 @@
   <header>
     <div class="logo">No-Product Store</div>
     <nav class="sidebar">
-      <a href="#">Home</a>
+      <a class="active-nav" href="#">Home</a>
       <a href="#">Categories</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
   </header>
+
+  <div class="board">
+  </div>
 
   <div class="container">
     <div class="seller-card">
@@ -205,10 +233,52 @@
             <div class="product-price">$27.99</div>
           </div>
         </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Sneakers Max Type A</div>
+            <div class="product-price">$29.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Joggers</div>
+            <div class="product-price">$15.59</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Nylon Fits</div>
+            <div class="product-price">$20.00</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Loose Overalls</div>
+            <div class="product-price">$26.00</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Nylon Loose Overalls</div>
+            <div class="product-price">$24.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Slimfit Overalls</div>
+            <div class="product-price">$26.00</div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="seller-card">
-      <h2>Denim Wears</h2>
+      <h2>Idan Wears</h2>
       <div class="sub-card">
         <div class="product">
           <div class="product-image"></div>
@@ -228,6 +298,116 @@
           <div class="product-image"></div>
           <div class="product-details">
             <div class="product-name">Sweatshirt</div>
+            <div class="product-price">$31.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Rugged Jacket</div>
+            <div class="product-price">$21.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Crop Top</div>
+            <div class="product-price">$17.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Oversized Hoodie</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Hoodie</div>
+            <div class="product-price">$21.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Slimfit Denim Jeans</div>
+            <div class="product-price">$23.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name"> Rugged Denim Jeans</div>
+            <div class="product-price">$31.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seller-card">
+      <h2>Deluxe Denim</h2>
+      <div class="sub-card">
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Trimmed Edge Jacket</div>
+            <div class="product-price">$14.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Top</div>
+            <div class="product-price">$29.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Sweatshirt</div>
+            <div class="product-price">$31.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Rugged Jacket</div>
+            <div class="product-price">$21.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Crop Top</div>
+            <div class="product-price">$17.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Oversized Hoodie</div>
+            <div class="product-price">$19.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Hoodie</div>
+            <div class="product-price">$21.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name">Slimfit Denim Jeans</div>
+            <div class="product-price">$23.99</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image"></div>
+          <div class="product-details">
+            <div class="product-name"> Rugged Denim Jeans</div>
             <div class="product-price">$31.99</div>
           </div>
         </div>
