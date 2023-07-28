@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product details - Enjoy Am</title>
+
+        <style>
+            .row{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            /*.single-product{
+                margin-top: 80px;
+            }*/
+
+            .small-img-row{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .col-2 img{
+                max-width: 100%;
+            }
+
+            .small-img-col{
+                flex-basis: 24%;
+                cursor: pointer;
+            }
+
+            .col-2{
+                flex-basis: 50px;
+                min-width: 300px;
+                padding: 20px;                
+            }
+
+            select{
+                display:block;
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            input{
+                width: 50px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 20px;
+                margin-right: 10px;
+                border: 1px solid #ff523b;
+
+            }
+
+            input:focus{
+                outline:none;
+            }
+            
+            a{
+                text-decoration: none;
+                color: #555;
+            }
+            
+            .fa{
+                color: #ff523b;
+                margin-left: 10px;
+            }
+            
+            p{
+                color: #555;
+            }
+            
+            .btn{ 
+                display: inline-block;
+                background: #ff523b;
+                color:#fff;
+                padding: 8px 30px;
+                margin: 30px 0;
+                border-radius: 30px;
+                transition: background 0.5s;
+            }
+            
+            .btn:hover{
+                background: #563434;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        
+        <div class="row">
+            <div class="col-2">
+                <img src="image1.jpeg" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="image2.jpeg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                    <img src="image1.jpeg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image2.jpeg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image1.jpeg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <p>Home / Sneakers</p>
+                <h1>Sneakers by Enjoy am</h1>
+                <h4>$89.99</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>47</option>
+                    <option>46</option>
+                    <option>45</option>
+                    <option>44</option>
+                    <option>43</option>
+                    <option>42</option>
+                </select>
+
+                <input type="number" value="1">
+                <a href="" class="btn">Add to cart</a>   
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p> [Introducing GenZ Sneakers]
+                    Ultimate Comfort and Style! Engineered for confidence and performance, 
+                    our trendy designs elevate your style. Unmatched cushioning ensures comfort 
+                    while eco-friendly materials prioritize sustainability. Step up your game at www.Genzsneakers.com! </p>
+            </div>
+
+            </div>  
+        </div>
+        </div>
+        
+    </body>
+
+</html>

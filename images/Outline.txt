@@ -1,0 +1,30 @@
+what kind of store
+JOOMIA
+
+homepage
+    header....done
+    store name...done
+    nav bar...done
+    footer...done
+    talk with other sellers
+    gallery
+
+
+
+
+
+
+
+
+product Page
+    header
+    product description
+    price
+
+
+
+Account page
+    header
+    sidebar
+    current sidebar content
+    

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jumia Product Page</title>
+  <style>
+    /* Common styles */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #1e1e1e;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: x-large; 
+      font-weight: bold;
+      color: #f6c90e;
+    }
+
+    /* Product details styles */
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .product-image {
+      width: 200px;
+      height: 200px;
+      background-color: #ffd83d32;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .product-name {
+      font-size: x-large;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      color: #f6c90e;
+      font-size: large;
+      margin-bottom: 20px;
+    }
+
+    .product-description {
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .add-to-cart-button {
+      padding: 10px 20px;
+      background-color: #f6c90e;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: large;
+    }
+
+    .add-to-cart-button:hover {
+      background-color: #f9d64c;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #1c1c1c;
+      padding: 20px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: small;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Jumia</div>
+  </header>
+
+  <div class="product-details">
+    <div class="product-image"></div>
+    <div class="product-name">Product Name</div>
+    <div class="product-price">$19.99</div>
+    <div class="product-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Nullam vitae ex sit amet ipsum eleifend iaculis eu eu velit.
+    </div>
+    <button class="add-to-cart-button">Add to Cart</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Jumia. All rights reserved.</p>
+  </footer>
+</body>
+</html>

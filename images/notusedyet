@@ -1,0 +1,26 @@
+<script>
+        var productImg = document.getElementByID("ProductImg");
+        var smallImg = Document.getElementByClassName("small-img");
+        smallImg[0].oneclick = function()
+        {
+            productImg.src = smallImg[0].src;
+        }    
+
+        smallImg[1].oneclick = function()
+        {
+            productImg.src = smallImg[1].src;
+        }
+
+        smallImg[2].oneclick = function()
+        {
+            productImg.src = smallImg[2].src;
+        }
+
+        smallImg[3].oneclick = function()
+        {
+            productImg.src = smallImg[3].src;
+        }
+
+        
+
+    </script>
